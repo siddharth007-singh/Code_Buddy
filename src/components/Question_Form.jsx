@@ -1,25 +1,48 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Header from './Header'
 
 const QuestionForm = () => {
   return (
-    <div> 
-        <form>
-            <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">Title</label>
-                <input type="text" className="mt-1 p-2 w-full border border-gray-300 rounded-md" />
+    <div className='container mx-auto'>
+        <h1 className='font-bold text-3xl py-10 px-10'>Ask a public question</h1>
+
+        
+        <div className='flex flex-row gap-10'>
+            {/*Form*/}
+            <div className='w-full h-full border border-gray-100 shadow-sm px-5 py-5'>
+                <div><button className='bg-[#1b74d1] text-white px-5 py-2 rounded mr-auto'>Add Tags</button></div>
+                <form>
+                    <div>
+                        <label className='block font-bold text-lg'>Title</label>
+                        <span className='text-sm text-gray-500'>Be specific and imagine you’re asking a question to another person</span>
+                        <input type='text' className='w-full border border-gray-200 rounded-md px-3 py-2 mt-1'/>
+                    </div>
+                    <div className='mt-3'>
+                        <label className='block font-bold text-lg'>Body</label>
+                        <span className='text-sm text-gray-500'>Include all the information someone would need to answer your question</span>
+                        <textarea className='w-full border border-gray-200 rounded-md px-3 py-2 mt-1 h-40'/>
+                    </div>
+
+                    <div className='mt-3'>
+                        <label className='block font-bold text-lg'>Tags</label>
+                        <span className='text-sm text-gray-500'>Add up to 5 tags to describe what your question is about</span>
+                        <input type='text' className='w-full border border-gray-200 rounded-md px-3 py-2 mt-1'/>
+                    </div>
+
+
+                    <div className='mt-3'>
+                        <button className='bg-[#1b74d1] text-white px-5 py-2 rounded '>Review your question</button>
+                    </div>
+                </form>
             </div>
-            <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">Description</label>
-                <textarea className="mt-1 p-2 w-full border border-gray-300 rounded-md"></textarea>
+
+            {/*step*/}
+            <div className='w-1/2 h-full bg-pink-400 px-5 py-5'>
+                sdlmvf;naskmnfaksdn
             </div>
-            <div className="mb-4">
-                <label className="block text-sm font-medium text-gray-700">Tags</label>
-                <input type="text" className="mt-1 p-2 w-full border border-gray-300 rounded-md" />
-            </div>
-            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md">Ask Question</button>
-        </form>
+        </div>
     </div>
+    
   )
 }
 

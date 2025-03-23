@@ -7,24 +7,26 @@ import Headers from "./Header"
 const MainLayout = () => {
   return (
     <>
+    <div className="flex flex-col min-h-screen">
 
-    <div className='flex flex-row justify-between'>
-        {/*sidebar*/}
-        <div>
-            <Sidebar/>
-        </div>
+    {/* Main Layout: Sidebar | Content | RightContent */}
+    <div className="flex flex-1">
+      {/* Sidebar */}
+      <div className="w-1/4 lg:w-1/5 bg-gray-800 text-white p-4">
+        <Sidebar />
+      </div>
 
-        {/*Content */}
-        <div>
-            <Content/>
-        </div>
+      {/* Content Area */}
+      <div className="flex-1 p-6">
+        <Content />
+      </div>
 
-        {/*Right Conetent*/}
-        <div>
-            <RightContent/>
-        </div>
-        
+      {/* Right Content (Optional Section) */}
+      <div className="w-1/4 lg:w-1/5 bg-gray-200 p-4 hidden lg:block">
+        <RightContent />
+      </div>
     </div>
+  </div>
     </>
   )
 }
