@@ -10,7 +10,6 @@ const QuestionForm = () => {
         <div className='flex flex-row gap-10'>
             {/*Form*/}
             <div className='w-full h-full border border-gray-100 shadow-sm px-5 py-5'>
-                <div><button className='bg-[#1b74d1] text-white px-5 py-2 rounded mr-auto'>Add Tags</button></div>
                 <form>
                     <div>
                         <label className='block font-bold text-lg'>Title</label>
@@ -37,8 +36,9 @@ const QuestionForm = () => {
             </div>
 
             {/*step*/}
+            
             <div className='w-1/2 h-full bg-pink-400 px-5 py-5'>
-                sdlmvf;naskmnfaksdn
+                Yash design Part
             </div>
         </div>
     </div>

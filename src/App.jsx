@@ -4,6 +4,7 @@ import Header from './components/Header'
 import MainLayout from "./components/MainLayout"
 import QuestionForm from './components/Question_Form'
 import User from "./components/Users";
+import TagPage from './components/TagPage'
 
 //Ye tumara apne roting hai 
 
@@ -21,6 +22,11 @@ const yashRouter = createBrowserRouter([
   {
     path:"/users",
     element:<User/>
+  },
+
+  {
+    path:"/tags",
+    element:<TagPage/>
   }
 
   
